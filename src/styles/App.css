@@ -69,9 +69,29 @@ h1, h2, h3, h4, h5, h6 {
   .main-content {
     padding: 1rem;
   }
+
+  body {
+    font-size: 14px;
+  }
+
+  .background-image {
+    opacity: 0.3;
+  }
 }
 
 .footer {
   position: relative;
   z-index: 1;
+}
+
+/* Add smooth scrolling for iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Prevent text size adjustment on orientation change */
+html {
+  -webkit-text-size-adjust: 100%;
 } 
