@@ -32,19 +32,23 @@ const MarketGrid = () => {
           <div className="filters">
             <div className="filter-dropdown">
               <div className="filter-value">
-                <span>Price</span>
-                <img src="https://chicksgold.com/icons/green-icons/item-bag.svg" alt="" className="control-icon" />
-                All
-                <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+                <span className="filter-label">Price</span>
+                <div className="filter-content">
+                  <img src="https://chicksgold.com/icons/green-icons/item-bag.svg" alt="" className="control-icon" />
+                  <span>All</span>
+                  <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+                </div>
               </div>
             </div>
             
             <div className="filter-dropdown">
               <div className="filter-value">
-                <span>Item Type</span>
-                <img src="https://chicksgold.com/icons/green-icons/feather.svg" alt="" className="control-icon" />
-                All
-                <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+                <span className="filter-label">Item Type</span>
+                <div className="filter-content">
+                  <img src="https://chicksgold.com/icons/green-icons/feather.svg" alt="" className="control-icon" />
+                  <span>All</span>
+                  <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+                </div>
               </div>
             </div>
           </div>
