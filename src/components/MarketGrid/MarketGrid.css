@@ -87,8 +87,29 @@
 
 .filters {
   display: flex;
+  gap: 1rem;
+}
+
+.filter-dropdown {
+  background-color: var(--background-darker);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  min-width: 180px;
+  cursor: pointer;
+}
+
+.filter-value {
+  display: flex;
+  align-items: center;
   gap: 0.5rem;
-  height: 42px;
+  color: var(--text-light);
+}
+
+.filter-value span:first-child {
+  color: var(--text-light);
+  opacity: 0.7;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
