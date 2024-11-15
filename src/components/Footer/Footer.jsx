@@ -5,6 +5,17 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
+        <div className="footer-section company">
+          <img 
+            src="https://chicksgold.com/logo/chicks-logo-large.svg" 
+            alt="Chicks Gold" 
+            className="footer-logo" 
+          />
+          <a href="mailto:support@chicksgold.com" className="support-email">
+            support@chicksgold.com
+          </a>
+        </div>
+
         <div className="footer-section">
           <h3>Chicks Gold</h3>
           <ul>
@@ -13,14 +24,6 @@ const Footer = () => {
             <li><a href="#blog">Blog</a></li>
             <li><a href="#sitemap">Sitemap</a></li>
           </ul>
-          <div className="trustpilot-reviews">
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Half Star" className="star-rating" />
-            <span className="review-text">TrustPilot Reviews</span>
-          </div>
         </div>
 
         <div className="footer-section">
@@ -40,19 +43,19 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-section social">
-          <div className="payment-methods">
-            <img src="/payment-icons.png" alt="Payment Methods" />
-          </div>
-          <div className="social-links">
-            <a href="#facebook">Facebook</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#instagram">Instagram</a>
+        <div className="footer-section reviews">
+          <div className="trustpilot-reviews">
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <span className="review-text">Trustpilot Reviews</span>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2023 Chicksgold.com. All Rights Reserved</p>
+        <p>© 2017 - 2020 Chicksgold.com. All Rights Reserved</p>
       </div>
     </footer>
   );
