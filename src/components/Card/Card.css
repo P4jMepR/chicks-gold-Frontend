@@ -76,8 +76,18 @@
 
 .original-price {
   color: #666;
-  text-decoration: line-through;
   font-size: 0.9rem;
+  position: relative;
+}
+
+.original-price::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background-color: #ff3b30;  /* Red line color */
 }
 
 .card-footer {
