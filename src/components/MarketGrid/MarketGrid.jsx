@@ -21,24 +21,28 @@ const MarketGrid = () => {
         <h1>Condimentum consectetur</h1>
         <div className="market-controls">
           <div className="select-game">
-            <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+            <img src="https://chicksgold.com/icons/game-default.svg" alt="" className="control-icon" />
             Select a game
+            <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
           </div>
           <div className="search-bar">
             <input type="text" placeholder="Search" />
           </div>
           <div className="filters">
             <button className="filter-btn">
+              <img src="https://chicksgold.com/icons/green-icons/item-bag.svg" alt="" className="control-icon" />
+              All Items
               <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-              All
             </button>
             <button className="filter-btn">
+              <img src="https://chicksgold.com/icons/green-icons/feather.svg" alt="" className="control-icon" />
+              All Types
               <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-              All
             </button>
           </div>
           <div className="sort">
             <button className="sort-btn">
+              <img src="https://chicksgold.com/icons/green-icons/filter.svg" alt="" className="control-icon" />
               Featured
               <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
             </button>
