@@ -22,9 +22,9 @@ const Card = ({
             <span className="stock-badge">In stock</span>
           </div>
         </div>
-        <div className="quantity-selector">
+        <div className="quantity-control">
           <span>{quantity}</span>
-          <div className="quantity-arrows">
+          <div className="arrows">
             <button onClick={increaseQuantity}>▲</button>
             <button onClick={decreaseQuantity}>▼</button>
           </div>
@@ -48,7 +48,7 @@ const Card = ({
         <p className="description">Lorem ipsum dolor sit amet consectetur adipiscing elitr.</p>
 
         <div className="card-footer">
-          <span className="details-btn">DETAILS</span>
+          <button className="details-btn">DETAILS</button>
           <button className="add-btn">
             ADD
             <div className="cart-icon-wrapper">
