@@ -4,6 +4,25 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="social-bar">
+        <div className="social-content">
+          <div className="social-icons">
+            <a href="#facebook" className="social-icon">
+              <img src="https://chicksgold.com/icons/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#instagram" className="social-icon">
+              <img src="https://chicksgold.com/icons/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#twitter" className="social-icon">
+              <img src="https://chicksgold.com/icons/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="#discord" className="social-icon">
+              <img src="https://chicksgold.com/icons/discord.svg" alt="Discord" />
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="footer-content">
         <div className="footer-section company">
           <img 
