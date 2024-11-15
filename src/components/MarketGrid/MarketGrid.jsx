@@ -16,10 +16,10 @@ const MarketGrid = () => {
   }));
 
   return (
-    <div className="market-container">
-      <div className="market-header">
+    <>
+      <div className="filters-section">
         <h1>Condimentum consectetur</h1>
-        <div className="market-controls">
+        <div className="filters-controls">
           <div className="select-game">
             <img src="https://chicksgold.com/icons/game-default.svg" alt="" className="control-icon" />
             Select a game
@@ -40,6 +40,14 @@ const MarketGrid = () => {
               <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
             </button>
           </div>
+        </div>
+      </div>
+
+      <div className="market-container">
+        <div className="market-header">
+          <div className="results-info">
+            Showing 20 - from 125
+          </div>
           <div className="sort">
             <button className="sort-btn">
               <img src="https://chicksgold.com/icons/green-icons/filter.svg" alt="" className="control-icon" />
@@ -48,19 +56,16 @@ const MarketGrid = () => {
             </button>
           </div>
         </div>
-        <div className="results-info">
-          Showing 20 - from 125
+        
+        <div className="market-grid">
+          {items.map(item => (
+            <Card key={item.id} {...item} />
+          ))}
         </div>
+        
+        <Pagination />
       </div>
-      
-      <div className="market-grid">
-        {items.map(item => (
-          <Card key={item.id} {...item} />
-        ))}
-      </div>
-      
-      <Pagination />
-    </div>
+    </>
   );
 };
 

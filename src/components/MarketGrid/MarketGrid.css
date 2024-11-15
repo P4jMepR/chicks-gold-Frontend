@@ -1,3 +1,14 @@
+.filters-section {
+  margin-bottom: 2rem;
+}
+
+.filters-controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
 .market-container {
   background-color: var(--background-dark);
   border-radius: 12px;
@@ -5,14 +16,10 @@
 }
 
 .market-header {
-  margin-bottom: 2rem;
-}
-
-.market-controls {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .market-grid {
@@ -35,20 +42,28 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  height: 42px;
+  box-sizing: border-box;
 }
 
 .search-bar {
   flex: 1;
+  height: 42px;
 }
 
 .search-bar input {
   width: 100%;
   outline: none;
+  padding: 0 1rem;
 }
 
 .control-icon {
   width: 16px;
   height: 16px;
+  filter: invert(56%) sepia(83%) saturate(353%) hue-rotate(116deg) brightness(89%) contrast(88%);
+}
+
+.select-game .control-icon {
   filter: brightness(0) invert(1);
 }
 
@@ -56,11 +71,13 @@
   width: 12px;
   height: 12px;
   margin-left: auto;
+  filter: brightness(0) invert(0.6);
 }
 
 .filters {
   display: flex;
   gap: 0.5rem;
+  height: 42px;
 }
 
 @media (max-width: 768px) {
@@ -68,11 +85,16 @@
     padding: 1rem;
   }
   
-  .market-controls {
+  .filters-controls {
     flex-direction: column;
   }
   
   .search-bar {
     width: 100%;
+  }
+  
+  .market-header {
+    flex-direction: column;
+    gap: 1rem;
   }
 } 
