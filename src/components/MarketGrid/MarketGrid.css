@@ -1,0 +1,56 @@
+.market-container {
+  background-color: var(--background-dark);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.market-header {
+  margin-bottom: 2rem;
+}
+
+.market-controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.select-game,
+.search-bar input,
+.filter-btn {
+  background-color: var(--background-darker);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--text-light);
+}
+
+.search-bar {
+  flex: 1;
+}
+
+.search-bar input {
+  width: 100%;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .market-container {
+    padding: 1rem;
+  }
+  
+  .market-controls {
+    flex-direction: column;
+  }
+  
+  .search-bar {
+    width: 100%;
+  }
+} 

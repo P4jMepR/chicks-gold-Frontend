@@ -1,0 +1,137 @@
+.header {
+  background-color: var(--background-dark);
+  padding: 0.75rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  min-width: 180px;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+}
+
+.separator {
+  width: 1px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.nav-button {
+  background-color: transparent;
+  color: var(--text-light);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-button:hover {
+  color: var(--primary-color);
+}
+
+.nav-button:hover .arrow-icon {
+  filter: invert(64%) sepia(98%) saturate(380%) hue-rotate(101deg) brightness(90%) contrast(85%);
+}
+
+.arrow-icon {
+  width: 12px;
+  height: 12px;
+  transition: filter 0.2s ease;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-button,
+.sign-in-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-button {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-light);
+}
+
+.cart-button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.cart-icon {
+  width: 16px;
+  height: 16px;
+  filter: invert(100%);
+}
+
+.profile-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.sign-in-button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-light);
+  padding: 0.5rem 1rem;
+}
+
+.sign-in-button:hover {
+  background-color: #29a876;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.75rem 1rem;
+  }
+
+  .main-nav {
+    display: none;
+  }
+  
+  .currency-selector {
+    display: none;
+  }
+
+  .separator {
+    display: none;
+  }
+} 
