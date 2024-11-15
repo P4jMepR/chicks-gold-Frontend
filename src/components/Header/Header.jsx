@@ -12,42 +12,14 @@ const Header = () => {
         <div className="separator"></div>
         
         <nav className="main-nav">
-          <div className="nav-item">
-            <button className="nav-button">
-              CURRENCY
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-            </button>
-          </div>
-          <div className="nav-item">
-            <button className="nav-button">
-              ITEMS
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-            </button>
-          </div>
-          <div className="nav-item">
-            <button className="nav-button">
-              ACCOUNTS
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-            </button>
-          </div>
-          <div className="nav-item">
-            <button className="nav-button">
-              SERVICES
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-            </button>
-          </div>
-          <div className="nav-item">
-            <button className="nav-button">
-              SWAP
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-            </button>
-          </div>
-          <div className="nav-item">
-            <button className="nav-button">
-              SELL
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-            </button>
-          </div>
+          {['CURRENCY', 'ITEMS', 'ACCOUNTS', 'SERVICES', 'SWAP', 'SELL'].map((item) => (
+            <div className="nav-item" key={item}>
+              <button className="nav-button">
+                {item}
+                <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+              </button>
+            </div>
+          ))}
         </nav>
 
         <div className="header-actions">

@@ -1,6 +1,6 @@
 .header {
   background-color: var(--background-dark);
-  padding: 0.75rem 2rem;
+  padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
@@ -8,37 +8,33 @@
 }
 
 .header-content {
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  padding-right: 1.5rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  padding-right: 1rem;
-  min-width: 180px;
+  padding: 0.75rem 0.75rem 0.75rem 1.5rem;
 }
 
 .logo img {
-  height: 32px;
+  height: 28px;
   width: auto;
 }
 
 .separator {
   width: 1px;
-  height: 32px;
+  height: 24px;
   background-color: rgba(255, 255, 255, 0.1);
-  margin: 0;
+  margin: 0 0.75rem;
 }
 
 .main-nav {
   display: flex;
-  gap: 1.5rem;
-  flex: 1;
-  justify-content: flex-start;
+  gap: 0.75rem;
+  margin-right: auto;
 }
 
 .nav-button {
