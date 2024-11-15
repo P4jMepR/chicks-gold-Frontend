@@ -84,8 +84,16 @@
 
 .cart-button {
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: none;
   color: var(--text-light);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .cart-button:hover {
@@ -95,18 +103,20 @@
 .cart-icon {
   width: 16px;
   height: 16px;
-  filter: invert(100%);
+  filter: brightness(0) invert(1);
 }
 
 .profile-icon {
   width: 16px;
   height: 16px;
+  filter: brightness(0) saturate(100%);
+  opacity: 1;
 }
 
 .sign-in-button {
   background-color: var(--primary-color);
   border: none;
-  color: var(--text-light);
+  color: var(--background-dark);
   padding: 0.5rem 1rem;
 }
 

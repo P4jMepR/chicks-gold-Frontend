@@ -31,11 +31,11 @@ const Header = () => {
           </div>
           <button className="cart-button">
             <img src="https://chicksgold.com/icons/cart.svg" alt="" className="cart-icon" />
-            CART (0)
+            CART (5)
           </button>
           <button className="sign-in-button">
-            <img src="https://chicksgold.com/sign-in/profile.png" alt="" className="profile-icon" />
             SIGN IN
+            <img src="https://chicksgold.com/sign-in/profile.png" alt="" className="profile-icon" />
           </button>
         </div>
       </div>
