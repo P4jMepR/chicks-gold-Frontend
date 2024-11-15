@@ -19,22 +19,29 @@
 }
 
 .footer-logo {
-  width: 150px;
+  width: 200px;
   height: auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .support-email {
-  color: var(--text-gray);
+  color: #FFFFFF;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.support-email:hover {
+  opacity: 0.9;
 }
 
 .footer-section h3 {
-  color: var(--text-light);
+  color: #FFFFFF;
   margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .footer-section ul {
@@ -64,12 +71,12 @@
 .trustpilot-reviews {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
 }
 
 .star-rating {
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   padding: 2px;
   background-color: #00b67a;
   border-radius: 2px;
@@ -77,8 +84,9 @@
 
 .review-text {
   color: var(--text-gray);
-  margin-left: 4px;
-  font-size: 0.85rem;
+  margin-left: 6px;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .footer-bottom {
