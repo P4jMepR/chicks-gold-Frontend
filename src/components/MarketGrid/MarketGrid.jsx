@@ -26,6 +26,7 @@ const MarketGrid = () => {
             <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
           </div>
           <div className="search-bar">
+            <img src="/search_icon.svg" alt="Search" className="search-icon" />
             <input type="text" placeholder="Search" />
           </div>
           <div className="filters">

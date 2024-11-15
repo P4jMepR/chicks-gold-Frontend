@@ -49,12 +49,23 @@
 .search-bar {
   flex: 1;
   height: 42px;
+  position: relative;
 }
 
 .search-bar input {
   width: 100%;
   outline: none;
-  padding: 0 1rem;
+  padding: 0 1rem 0 2.5rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
 }
 
 .control-icon {
