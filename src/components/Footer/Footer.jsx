@@ -1,9 +1,11 @@
 import React from 'react';
+import Payments from '../Payments/Payments';
 import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
+      <Payments />
       <div className="social-bar">
         <div className="social-content">
           <div className="social-icons">

@@ -1,0 +1,29 @@
+.payments-container {
+  padding: 15px 0;
+  background-color: #1A1D2B;
+  width: 100%;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.payment-logo {
+  height: 20px;
+  object-fit: contain;
+}
+
+.crypto-logo {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+}
+
+.additional-methods {
+  color: #6C727F;
+  font-size: 14px;
+} 
