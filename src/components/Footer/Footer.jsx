@@ -8,16 +8,16 @@ const Footer = () => {
         <div className="social-content">
           <div className="social-icons">
             <a href="#facebook" className="social-icon">
-              <img src="https://chicksgold.com/icons/facebook.svg" alt="Facebook" />
+              <img src="https://chicksgold.com/icons/facebook_white.svg" alt="Facebook" />
             </a>
             <a href="#instagram" className="social-icon">
-              <img src="https://chicksgold.com/icons/instagram.svg" alt="Instagram" />
+              <img src="https://chicksgold.com/icons/instagram_white.svg" alt="Instagram" />
             </a>
             <a href="#twitter" className="social-icon">
-              <img src="https://chicksgold.com/icons/twitter.svg" alt="Twitter" />
+              <img src="https://chicksgold.com/icons/twitter_white.svg" alt="Twitter" />
             </a>
             <a href="#discord" className="social-icon">
-              <img src="https://chicksgold.com/icons/discord.svg" alt="Discord" />
+              <img src="https://chicksgold.com/icons/discord_white.svg" alt="Discord" />
             </a>
           </div>
         </div>
