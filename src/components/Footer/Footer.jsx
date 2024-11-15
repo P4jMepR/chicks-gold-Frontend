@@ -14,7 +14,7 @@ const Footer = () => {
               <img src="https://chicksgold.com/icons/instagram_white.svg" alt="Instagram" />
             </a>
             <a href="#twitter" className="social-icon">
-              <img src="https://chicksgold.com/icons/twitter_white.svg" alt="Twitter" />
+              <img src="/old_twitter.svg" alt="Twitter" />
             </a>
             <a href="#discord" className="social-icon">
               <img src="https://chicksgold.com/icons/discord_white.svg" alt="Discord" />
