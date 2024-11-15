@@ -79,9 +79,10 @@
   filter: brightness(0) invert(1);
 }
 
-.arrow-icon {
-  width: 12px;
-  height: 12px;
+.select-game .arrow-icon {
+  position: static;
+  transform: none;
+  right: auto;
   margin-left: auto;
 }
 
@@ -100,6 +101,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  position: relative;
 }
 
 .filter-icon-wrapper {
@@ -113,7 +115,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.25rem;
+  padding-right: 1.5rem;
 }
 
 .filter-label {
@@ -137,6 +139,7 @@
   padding: 0 1rem;
   gap: 0.75rem;
   width: fit-content;
+  position: relative;
 }
 
 .sort-value {
@@ -144,7 +147,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.125rem;
+  padding-right: 1.5rem;
 }
 
 .sort-label {
@@ -162,6 +165,22 @@
   color: var(--text-light);
   font-size: 0.875rem;
   width: 100%;
+}
+
+.arrow-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+}
+
+/* Specific styling for filter dropdowns and sort button arrows */
+.filter-dropdown .arrow-icon,
+.sort-btn .arrow-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0;
 }
 
 @media (max-width: 768px) {
