@@ -21,19 +21,19 @@ const Payments = () => {
     },
     {
       name: 'Bitcoin Cash',
-      logo: 'https://chicksgold.com/payment-methods/bitcoin-cash.svg'
+      logo: 'https://chicks-currencies.s3.amazonaws.com/1c08ddf1-b0d1-4476-930b-676f621b036c'
     },
     {
       name: 'Ethereum',
-      logo: 'https://chicksgold.com/payment-methods/ethereum.svg'
+      logo: 'https://chicks-currencies.s3.amazonaws.com/eabeff84-a529-4c2e-ae18-9f2b983728e9'
     },
     {
       name: 'Bitcoin',
-      logo: 'https://chicksgold.com/payment-methods/bitcoin.svg'
+      logo: 'https://chicks-currencies.s3.amazonaws.com/17d927b5-c718-4e5d-8e3e-d7f943c3bfc3'
     },
     {
       name: 'Litecoin',
-      logo: 'https://chicksgold.com/payment-methods/litecoin.svg'
+      logo: 'https://chicks-currencies.s3.amazonaws.com/9d56a727-bb32-436d-82aa-ec58b64342fe'
     }
   ];
 

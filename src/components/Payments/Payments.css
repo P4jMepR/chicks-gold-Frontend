@@ -18,12 +18,18 @@
 }
 
 .crypto-logo {
-  height: 32px;
-  width: 32px;
+  height: 16px;
+  width: 16px;
   object-fit: contain;
+  margin-left: -18px;
+}
+
+.payment-logo + .crypto-logo {
+  margin-left: 0;
 }
 
 .additional-methods {
   color: #6C727F;
   font-size: 14px;
+  margin-left: 0px;
 } 
