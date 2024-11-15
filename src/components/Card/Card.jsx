@@ -1,34 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Card.css';
 
-const Card = ({ title, price, originalPrice, image, onSale, stock, delivery }) => {
+const Card = ({ 
+  title, 
+  price, 
+  originalPrice, 
+  image, 
+  onSale 
+}) => {
+  const [quantity, setQuantity] = useState(1);
+
+  const increaseQuantity = () => setQuantity(prev => prev + 1);
+  const decreaseQuantity = () => setQuantity(prev => Math.max(1, prev - 1));
+
   return (
     <div className="card">
-      {onSale && <span className="sale-badge">ON SALE</span>}
+      <div className="status-bar">
+        {onSale && <span className="sale-badge">ON SALE</span>}
+        <span className="stock-badge">In stock</span>
+      </div>
+      
       <div className="card-image">
         <img src={image} alt={title} />
-        <div className="stock-info">
-          <span className="stock">{stock} left in stock</span>
-        </div>
       </div>
-      <div className="card-content">
-        <h3 className="card-title">{title}</h3>
-        <div className="price-container">
-          <span className="current-price">${price.toFixed(2)}</span>
-          {originalPrice && (
-            <span className="original-price">${originalPrice.toFixed(2)}</span>
-          )}
-        </div>
-        <div className="delivery-info">
-          <span className="delivery-badge">
-            <span className="dot"></span>
-            {delivery}
-          </span>
-        </div>
-        <div className="card-actions">
+
+      <h3 className="card-title">{title}</h3>
+      
+      <div className="price-container">
+        <span className="current-price">${price.toFixed(2)}</span>
+        {originalPrice && (
+          <span className="original-price">${originalPrice.toFixed(2)}</span>
+        )}
+      </div>
+
+      <div className="card-footer">
+        <div className="card-footer-left">
+          <div className="quantity-selector">
+            <span>{quantity}</span>
+            <div className="quantity-arrows">
+              <button onClick={increaseQuantity}>▲</button>
+              <button onClick={decreaseQuantity}>▼</button>
+            </div>
+          </div>
           <button className="details-btn">DETAILS</button>
-          <button className="add-btn">ADD</button>
         </div>
+        <button className="add-btn">
+          ADD
+          <svg viewBox="0 0 24 24" className="cart-icon">
+            <path d="M8 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-9.8-3.2c0 .1.1.2.2.2h12.2c.1 0 .2-.1.2-.2l1.3-5.8c0-.1-.1-.2-.2-.2H7.2l-.3-1.5c0-.1-.1-.2-.2-.2H4c-.1 0-.2.1-.2.2v1c0 .1.1.2.2.2h2l1.4 7.1z"/>
+          </svg>
+        </button>
       </div>
     </div>
   );
