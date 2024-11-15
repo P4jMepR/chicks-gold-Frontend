@@ -47,6 +47,12 @@ const Card = ({
 
         <p className="description">Lorem ipsum dolor sit amet consectetur adipiscing elitr.</p>
 
+        <img 
+          src="https://chicks-games.s3.amazonaws.com/5695707f-378c-4b23-b85e-3216ccf3af06" 
+          alt="Game indicator" 
+          className="game-indicator"
+        />
+
         <div className="card-footer">
           <button className="details-btn">DETAILS</button>
           <button className="add-btn">
