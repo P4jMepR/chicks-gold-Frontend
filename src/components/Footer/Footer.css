@@ -51,6 +51,27 @@
   color: var(--text-gray);
 }
 
+.trustpilot-reviews {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 1rem;
+}
+
+.star-rating {
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  background-color: #00b67a; /* TrustPilot green color */
+  border-radius: 2px;
+}
+
+.review-text {
+  color: var(--text-gray);
+  margin-left: 4px;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1rem 1rem;

@@ -13,6 +13,14 @@ const Footer = () => {
             <li><a href="#blog">Blog</a></li>
             <li><a href="#sitemap">Sitemap</a></li>
           </ul>
+          <div className="trustpilot-reviews">
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
+            <img src="https://chicksgold.com/home/star_full.svg" alt="Half Star" className="star-rating" />
+            <span className="review-text">TrustPilot Reviews</span>
+          </div>
         </div>
 
         <div className="footer-section">
