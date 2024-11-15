@@ -23,7 +23,7 @@ const MarketGrid = () => {
           <div className="select-game">
             <img src="https://chicksgold.com/icons/game-default.svg" alt="" className="control-icon" />
             Select a game
-            <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+            <img src="https://chicksgold.com/icons/arrow-white.svg" alt="" className="arrow-icon" />
           </div>
           <div className="search-bar">
             <img src="/search_icon.svg" alt="Search" className="search-icon" />
@@ -38,7 +38,7 @@ const MarketGrid = () => {
                 <span className="filter-label">Price</span>
                 <div className="filter-content">
                   <span>All</span>
-                  <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+                  <img src="https://chicksgold.com/icons/arrow-white.svg" alt="" className="arrow-icon" />
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@ const MarketGrid = () => {
                 <span className="filter-label">Item Type</span>
                 <div className="filter-content">
                   <span>All</span>
-                  <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+                  <img src="https://chicksgold.com/icons/arrow-white.svg" alt="" className="arrow-icon" />
                 </div>
               </div>
             </div>
@@ -66,9 +66,16 @@ const MarketGrid = () => {
           </div>
           <div className="sort">
             <button className="sort-btn">
-              <img src="https://chicksgold.com/icons/green-icons/filter.svg" alt="" className="control-icon" />
-              Featured
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+              <div className="filter-icon-wrapper">
+                <img src="https://chicksgold.com/icons/green-icons/filter.svg" alt="" className="control-icon" />
+              </div>
+              <div className="sort-value">
+                <span className="sort-label">Sort By</span>
+                <div className="sort-content">
+                  <span>Featured</span>
+                  <img src="https://chicksgold.com/icons/arrow-white.svg" alt="" className="arrow-icon" />
+                </div>
+              </div>
             </button>
           </div>
         </div>

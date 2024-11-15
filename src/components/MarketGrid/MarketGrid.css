@@ -80,10 +80,9 @@
 }
 
 .arrow-icon {
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   margin-left: auto;
-  filter: brightness(0) invert(0.6);
 }
 
 .filters {
@@ -126,6 +125,36 @@
 }
 
 .filter-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.sort-btn {
+  min-width: 160px;
+  padding: 0 1rem;
+  gap: 0.75rem;
+}
+
+.sort-value {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.sort-label {
+  color: var(--text-light);
+  opacity: 0.6;
+  font-size: 0.75rem;
+  line-height: 1;
+  margin-top: -2px;
+}
+
+.sort-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
