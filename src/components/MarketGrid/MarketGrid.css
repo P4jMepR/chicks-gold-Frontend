@@ -69,8 +69,8 @@
 }
 
 .control-icon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   filter: invert(56%) sepia(83%) saturate(353%) hue-rotate(116deg) brightness(89%) contrast(88%);
 }
 
@@ -79,8 +79,8 @@
 }
 
 .arrow-icon {
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   margin-left: auto;
   filter: brightness(0) invert(0.6);
 }
@@ -94,12 +94,22 @@
   background-color: var(--background-darker);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem;
   cursor: pointer;
-  min-width: 140px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.filter-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter-value {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -107,15 +117,17 @@
 
 .filter-label {
   color: var(--text-light);
-  opacity: 0.7;
+  opacity: 0.6;
   font-size: 0.75rem;
+  line-height: 1;
 }
 
 .filter-content {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: space-between;
   color: var(--text-light);
+  font-size: 0.875rem;
 }
 
 @media (max-width: 768px) {
