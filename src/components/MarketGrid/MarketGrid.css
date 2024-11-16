@@ -11,9 +11,9 @@
 
 .market-container {
   background-color: var(--background-dark);
-  border-radius: 12px;
+  border-radius: 5px;
   padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #7d7e89;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
