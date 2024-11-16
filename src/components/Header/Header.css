@@ -19,11 +19,13 @@
   display: flex;
   align-items: center;
   padding: 0 1.5rem;
+  margin-top: -12px;
 }
 
 .logo img {
   height: 24px;
   width: auto;
+  display: block;
 }
 
 .separator {
