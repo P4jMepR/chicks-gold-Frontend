@@ -21,22 +21,18 @@ const Header = () => {
         
         <nav className="main-nav">
           {navItems.map((item) => (
-            <div className="nav-item" key={item}>
-              <button className="nav-button">
-                {item}
-                <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-              </button>
-            </div>
+            <button className="nav-button" key={item}>
+              {item}
+              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+            </button>
           ))}
         </nav>
 
         <div className="header-actions">
-          <div className="currency-selector">
-            <button className="nav-button">
-              USD
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-            </button>
-          </div>
+          <button className="nav-button">
+            USD
+            <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+          </button>
           <button className="cart-button">
             <img src="https://chicksgold.com/icons/cart.svg" alt="" className="cart-icon" />
             CART (5)
