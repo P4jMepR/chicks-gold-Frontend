@@ -38,7 +38,6 @@
 .filter-dropdown {
   background-color: var(--background-darker);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
   padding: 0.5rem 1rem;
   color: var(--text-light);
   display: flex;
@@ -96,7 +95,6 @@
 .filter-dropdown {
   background-color: var(--background-darker);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
   padding: 0 1rem;
   cursor: pointer;
   min-width: 160px;
@@ -170,12 +168,11 @@
 }
 
 .arrow-icon {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   margin-left: auto;
 }
 
-/* Specific styling for filter dropdowns and sort button arrows */
 .filter-dropdown .arrow-icon,
 .sort-btn .arrow-icon {
   position: absolute;
