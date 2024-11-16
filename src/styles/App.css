@@ -4,8 +4,8 @@
 :root {
   --primary-color: #2EBD85;
   --secondary-color: #5956E9;
-  --background-dark: #1F2937;
-  --background-darker: #111827;
+  --background-dark: #2f3141;
+  --background-darker: #2f3141;
   --text-light: #F9FAFB;
   --text-gray: #9CA3AF;
   
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.8;
   z-index: 0;
 }
 

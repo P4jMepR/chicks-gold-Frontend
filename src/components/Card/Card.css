@@ -1,5 +1,5 @@
 .card {
-  background-color: #1a1c23;
+  background-color: #303648;
   border-radius: 8px;
   padding: 12px;
   width: 100%;
@@ -61,7 +61,7 @@
 .card-image {
   width: 64px;
   height: 64px;
-  background-color: #13141a;
+  background-color: #3a445c;
   margin-bottom: 12px;
   border-radius: 4px;
   overflow: hidden;
@@ -129,7 +129,7 @@
 
 .details-btn {
   flex: 1;
-  background-color: #13141a;
+  background-color: #34384a;
   border: none;
   border-radius: 4px;
   color: #666;
@@ -172,7 +172,7 @@
 }
 
 .quantity-control {
-  background: #13141a;
+  background: #3a445c;
   border-radius: 4px;
   display: flex;
   align-items: center;
