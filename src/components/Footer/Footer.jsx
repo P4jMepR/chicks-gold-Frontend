@@ -2,84 +2,107 @@ import React from 'react';
 import Payments from '../Payments/Payments';
 import './Footer.css';
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <Payments />
-      <div className="social-bar">
-        <div className="social-content">
-          <div className="social-icons">
-            <a href="#facebook" className="social-icon">
-              <img src="https://chicksgold.com/icons/facebook_white.svg" alt="Facebook" />
-            </a>
-            <a href="#instagram" className="social-icon">
-              <img src="https://chicksgold.com/icons/instagram_white.svg" alt="Instagram" />
-            </a>
-            <a href="#twitter" className="social-icon">
-              <img src="/old_twitter.svg" alt="Twitter" />
-            </a>
-            <a href="#discord" className="social-icon">
-              <img src="https://chicksgold.com/icons/discord_white.svg" alt="Discord" />
-            </a>
-          </div>
-        </div>
+const SOCIAL_LINKS = [
+  { href: '#facebook', icon: 'https://chicksgold.com/icons/facebook_white.svg', alt: 'Facebook' },
+  { href: '#instagram', icon: 'https://chicksgold.com/icons/instagram_white.svg', alt: 'Instagram' },
+  { href: '#twitter', icon: '/old_twitter.svg', alt: 'Twitter' },
+  { href: '#discord', icon: 'https://chicksgold.com/icons/discord_white.svg', alt: 'Discord' }
+];
+
+const FOOTER_SECTIONS = [
+  {
+    title: 'Chicks Gold',
+    links: [
+      { href: '#games', text: 'Games' },
+      { href: '#about', text: 'About Us' },
+      { href: '#blog', text: 'Blog' },
+      { href: '#sitemap', text: 'Sitemap' }
+    ]
+  },
+  {
+    title: 'Support',
+    links: [
+      { href: '#contact', text: 'Contact Us' },
+      { href: '#faq', text: 'FAQ' }
+    ]
+  },
+  {
+    title: 'Legal',
+    links: [
+      { href: '#privacy', text: 'Privacy Policy' },
+      { href: '#terms', text: 'Terms of Service' },
+      { href: '#copyright', text: 'Copyright Policy' }
+    ]
+  }
+];
+
+const SocialIcons = () => (
+  <div className="social-icons">
+    {SOCIAL_LINKS.map(({ href, icon, alt }) => (
+      <a key={href} href={href} className="social-icon">
+        <img src={icon} alt={alt} />
+      </a>
+    ))}
+  </div>
+);
+
+const FooterSection = ({ title, links }) => (
+  <div className="footer-section">
+    <h3>{title}</h3>
+    <ul>
+      {links.map(({ href, text }) => (
+        <li key={href}>
+          <a href={href}>{text}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+const Footer = () => (
+  <footer className="footer">
+    <Payments />
+    <div className="social-bar">
+      <div className="social-content">
+        <SocialIcons />
+      </div>
+    </div>
+
+    <div className="footer-content">
+      <div className="footer-section company">
+        <img 
+          src="https://chicksgold.com/logo/chicks-logo-large.svg" 
+          alt="Chicks Gold" 
+          className="footer-logo" 
+        />
+        <a href="mailto:support@chicksgold.com" className="support-email">
+          support@chicksgold.com
+        </a>
       </div>
 
-      <div className="footer-content">
-        <div className="footer-section company">
-          <img 
-            src="https://chicksgold.com/logo/chicks-logo-large.svg" 
-            alt="Chicks Gold" 
-            className="footer-logo" 
-          />
-          <a href="mailto:support@chicksgold.com" className="support-email">
-            support@chicksgold.com
-          </a>
-        </div>
+      {FOOTER_SECTIONS.map(section => (
+        <FooterSection key={section.title} {...section} />
+      ))}
 
-        <div className="footer-section">
-          <h3>Chicks Gold</h3>
-          <ul>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#sitemap">Sitemap</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>Support</h3>
-          <ul>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>Legal</h3>
-          <ul>
-            <li><a href="#privacy">Privacy Policy</a></li>
-            <li><a href="#terms">Terms of Service</a></li>
-            <li><a href="#copyright">Copyright Policy</a></li>
-          </ul>
-        </div>
-
-        <div className="footer-section reviews">
-          <div className="trustpilot-reviews">
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <img src="https://chicksgold.com/home/star_full.svg" alt="Full Star" className="star-rating" />
-            <span className="review-text">Trustpilot Reviews</span>
-          </div>
+      <div className="footer-section reviews">
+        <div className="trustpilot-reviews">
+          {[...Array(5)].map((_, i) => (
+            <img 
+              key={i}
+              src="https://chicksgold.com/home/star_full.svg" 
+              alt="Full Star" 
+              className="star-rating" 
+            />
+          ))}
+          <span className="review-text">Trustpilot Reviews</span>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>© 2017 - 2020 Chicksgold.com. All Rights Reserved</p>
-      </div>
-    </footer>
-  );
-};
+    </div>
+    
+    <div className="footer-bottom">
+      <p>© 2017 - 2020 Chicksgold.com. All Rights Reserved</p>
+    </div>
+  </footer>
+);
 
 export default Footer; 
