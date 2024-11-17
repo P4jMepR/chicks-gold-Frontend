@@ -55,13 +55,40 @@
 }
 
 @media (max-width: 768px) {
-  .pagination-btn {
-    padding: 0.5rem;
-    min-width: 32px;
+  .pagination {
+    gap: 0.5rem;
+    margin-top: 1.5rem;
   }
-  
+
+  .pagination-numbers {
+    gap: 0.5rem;
+  }
+
+  .pagination-btn {
+    min-width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .pagination-btn.prev,
+  .pagination-btn.next {
+    width: 28px;
+  }
+
+  /* Show fewer page numbers on mobile */
   .pagination-numbers button:not(.active):not(:first-child):not(:last-child) {
     display: none;
+  }
+
+  .pagination-ellipsis {
+    display: none;
+  }
+
+  /* Show first, active, and last page only */
+  .pagination-numbers button:first-child,
+  .pagination-numbers button.active,
+  .pagination-numbers button:last-child {
+    display: flex;
   }
 } 
 

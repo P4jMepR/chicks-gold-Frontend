@@ -217,34 +217,66 @@
 
 @media (max-width: 768px) {
   .card {
-    padding: 10px;
+    padding: 1rem;
+    margin: 0 0 1rem 0;
   }
 
   .card-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
   }
 
   .status-bar {
-    width: 100%;
+    width: auto;
+    flex-wrap: wrap;
   }
 
   .status-badges {
     width: auto;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .sale-badge,
+  .stock-badge {
+    width: auto;
+    padding: 0.25rem 0.5rem;
   }
 
   .quantity-control {
-    align-self: flex-end;
-    margin-top: -30px; /* Pull up to align with status badges */
+    align-self: center;
+    margin-top: 0;
+  }
+
+  .card-image {
+    width: 72px;
+    height: 72px;
   }
 
   .card-footer {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0.5rem;
   }
 
-  .add-btn, .details-btn {
-    width: 100%;
-    padding: 12px 16px;
+  .add-btn,
+  .details-btn {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .content {
+    padding: 0 0.5rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
   }
 } 
