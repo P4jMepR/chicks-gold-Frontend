@@ -100,7 +100,7 @@
 }
 
 .original-price {
-  color: #666;
+  color: #fff;
   font-size: 0.9rem;
   position: relative;
 }
@@ -110,9 +110,9 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
-  height: 1px;
-  background-color: #ff3b30;  /* Red line color */
+  top: 45%;
+  height: 2px;
+  background-color: #ff3b30;
 }
 
 .description {
@@ -196,7 +196,8 @@
 .arrows button {
   background: none;
   border: none;
-  color: #666;
+  color: #fff;
+  opacity: 0.8;
   cursor: pointer;
   font-size: 10px;
   height: 10px;
