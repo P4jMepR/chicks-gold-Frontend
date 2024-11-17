@@ -66,7 +66,6 @@ const Header = () => {
         </div>
       </div>
 
-      {}
       <nav className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
         <div className="mobile-nav-top">
           <button className="mobile-nav-button currency">
