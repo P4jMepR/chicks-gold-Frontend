@@ -75,7 +75,7 @@
     width: 28px;
   }
 
-  /* Show fewer page numbers on mobile */
+  
   .pagination-numbers button:not(.active):not(:first-child):not(:last-child) {
     display: none;
   }
@@ -84,7 +84,7 @@
     display: none;
   }
 
-  /* Show first, active, and last page only */
+  
   .pagination-numbers button:first-child,
   .pagination-numbers button.active,
   .pagination-numbers button:last-child {

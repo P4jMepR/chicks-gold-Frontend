@@ -9,7 +9,7 @@
   --text-light: #F9FAFB;
   --text-gray: #9CA3AF;
   
-  /* Font weights */
+  
   --font-normal: 400;
   --font-medium: 500;
   --font-semibold: 600;
@@ -87,14 +87,14 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-/* Add smooth scrolling for iOS */
+
 @supports (-webkit-overflow-scrolling: touch) {
   body {
     -webkit-overflow-scrolling: touch;
   }
 }
 
-/* Prevent text size adjustment on orientation change */
+
 html {
   -webkit-text-size-adjust: 100%;
 } 

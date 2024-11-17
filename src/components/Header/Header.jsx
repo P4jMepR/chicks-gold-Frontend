@@ -4,7 +4,6 @@ import './Header.css';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Add effect to handle body scroll
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
@@ -12,7 +11,6 @@ const Header = () => {
       document.body.style.overflow = 'unset';
     }
 
-    // Cleanup function
     return () => {
       document.body.style.overflow = 'unset';
     };
@@ -68,7 +66,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {}
       <nav className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
         <div className="mobile-nav-top">
           <button className="mobile-nav-button currency">

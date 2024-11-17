@@ -229,7 +229,7 @@
     padding: 0 1rem;
   }
 
-  /* Game selector styling */
+  
   .select-game {
     min-width: 100%;
     background-color: rgba(77, 91, 126, 0.4);
@@ -244,7 +244,7 @@
     color: var(--text-light);
   }
 
-  /* Search bar styling */
+  
   .search-bar {
     margin: 0;
     width: 100%;
@@ -267,7 +267,7 @@
     height: 20px;
   }
 
-  /* Filter dropdowns */
+  
   .filters {
     flex-direction: column;
     gap: 0.5rem;
@@ -284,7 +284,7 @@
     margin: 0;
   }
 
-  /* Results section */
+  
   .market-container {
     padding: 1rem;
     margin: 1rem 0;
@@ -303,7 +303,7 @@
     margin-bottom: 0.5rem;
   }
 
-  /* Sort button */
+  
   .sort-btn {
     width: 100%;
     background-color: rgba(77, 91, 126, 0.4);
@@ -313,7 +313,7 @@
     padding: 0.5rem 1rem;
   }
 
-  /* Grid layout */
+  
   .market-grid {
     grid-template-columns: 1fr;
     gap: 0.5rem;
@@ -321,7 +321,7 @@
   }
 } 
 
-/* Add these styles for the filter icons */
+
 .filter-icon-wrapper img,
 .sort-btn .control-icon {
   filter: none;
