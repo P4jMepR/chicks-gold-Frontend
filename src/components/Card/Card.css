@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 312px;
+  box-sizing: border-box;
 }
 
 .card-header {
@@ -123,7 +125,7 @@
 .description {
   color: #666;
   font-size: 0.85rem;
-  margin: 0 0 16px 0;
+  margin: 0 0 26px 0;
 }
 
 .card-footer {
@@ -225,6 +227,7 @@
   .card {
     padding: 1rem;
     margin: 0 0 1rem 0;
+    height: 312px;
   }
 
   .card-header {
