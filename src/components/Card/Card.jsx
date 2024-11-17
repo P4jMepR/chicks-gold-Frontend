@@ -40,19 +40,27 @@ const Card = ({
         <h3 className="card-title">{title}</h3>
         
         <div className="price-container">
-          <span className="current-price">${price.toFixed(2)}</span>
-          {originalPrice && (
-            <span className="original-price">${originalPrice.toFixed(2)}</span>
+          {price ? (
+            <>
+              <span className="current-price">${price.toFixed(2)}</span>
+              {originalPrice && (
+                <span className="original-price">${originalPrice.toFixed(2)}</span>
+              )}
+            </>
+          ) : (
+            <span className="current-price">Price on request</span>
           )}
         </div>
 
         <p className="description">Lorem ipsum dolor sit amet consectetur adipiscing elitr.</p>
 
-        <img 
-          src={gameIcon || "https://chicks-games.s3.amazonaws.com/5695707f-378c-4b23-b85e-3216ccf3af06"}
-          alt="Game indicator" 
-          className="game-indicator"
-        />
+        {gameIcon && (
+          <img 
+            src={gameIcon}
+            alt="Game indicator" 
+            className="game-indicator"
+          />
+        )}
 
         <div className="card-footer">
           <button className="details-btn">DETAILS</button>

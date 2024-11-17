@@ -214,13 +214,16 @@
 
 .game-indicator {
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: 12px;
+  width: 32px;
+  height: 32px;
+  right: 17px;
   top: 50%;
   transform: translateY(-50%);
-  transform: translateX(-50%);
-  
+  border: 1px solid #39e29d;
+  border-radius: 20px;
+  object-fit: contain;
+  padding: 3px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
@@ -290,5 +293,13 @@
   .description {
     font-size: 0.8rem;
     margin-bottom: 1rem;
+  }
+
+  .game-indicator {
+    width: 32px;
+    height: 32px;
+    right: 17px;
+    padding: 3px;
+    border-radius: 20px;
   }
 } 

@@ -3,52 +3,64 @@ import Card from '../Card/Card';
 import Pagination from '../Pagination/Pagination';
 import './MarketGrid.css';
 
+const baseItems = [
+  {
+    title: 'Blue PartyHat',
+    basePrice: 450.00,
+    image: 'https://chicks-products.s3.amazonaws.com/2de94590-b836-4d2a-9d15-575c35f38892',
+    stock: 156,
+    delivery: 'Instant Delivery',
+    gameIcon: 'https://chicks-games.s3.amazonaws.com/01766631-fc8d-426c-9f9b-7d2fd05b91b6'
+  },
+  {
+    title: 'Mythical Shield',
+    basePrice: 299.99,
+    image: './fort_shield.webp',
+    stock: 42,
+    delivery: 'Instant Delivery',
+    gameIcon: 'https://chicks-games.s3.amazonaws.com/11a1698b-9135-4a14-8d11-08525bb0aa75'
+  },
+  {
+    title: 'Tempered AK',
+    basePrice: 725.00,
+    image: 'https://chicks-products.s3.amazonaws.com/1a1f2574-d066-4f63-9f69-de902c3ec79e',
+    stock: 8,
+    delivery: 'Instant Delivery',
+    gameIcon: 'https://chicks-games.s3.amazonaws.com/83b5f604-b4ef-4c1b-8778-914f00ffb4f9'
+  }
+];
+
+const generateVariations = (baseItems, count) => {
+  const variations = [];
+  const itemsPerType = Math.floor(count / baseItems.length);
+
+  baseItems.forEach((baseItem, index) => {
+    for (let i = 0; i < itemsPerType; i++) {
+      // Random variations
+      const hasPrice = Math.random() > 0.2; // 80% chance to have a price
+      const isOnSale = hasPrice && Math.random() > 0.5; // 50% chance to be on sale if has price
+      const priceVariation = 0.9 + Math.random() * 0.2; // Price varies by ±10%
+
+      const basePrice = baseItem.basePrice * priceVariation;
+      const saleDiscount = 0.1 + Math.random() * 0.2; // 10-30% discount
+
+      const variation = {
+        ...baseItem,
+        id: index * itemsPerType + i,
+        price: hasPrice ? Number(basePrice.toFixed(2)) : null,
+        originalPrice: isOnSale ? Number((basePrice * (1 + saleDiscount)).toFixed(2)) : null,
+        onSale: isOnSale
+      };
+
+      variations.push(variation);
+    }
+  });
+
+  return variations;
+};
+
 const MarketGrid = () => {
-  const items = [
-    {
-      id: 0,
-      title: 'Blue PartyHat',
-      price: 450.00,
-      originalPrice: 500.00,
-      image: 'https://chicks-products.s3.amazonaws.com/2de94590-b836-4d2a-9d15-575c35f38892',
-      onSale: true,
-      stock: 156,
-      delivery: 'Instant Delivery'
-    },
-    {
-      id: 1,
-      title: 'Mythical Shield',
-      price: 299.99,
-      originalPrice: 399.99,
-      image: './fort_shield.webp',
-      onSale: true,
-      stock: 42,
-      delivery: 'Instant Delivery',
-      gameIcon: 'https://chicks-games.s3.amazonaws.com/11a1698b-9135-4a14-8d11-08525bb0aa75'
-    },
-    {
-      id: 2,
-      title: 'Mythical Shield',
-      price: 325.00,
-      originalPrice: null,
-      image: './fort_shield.webp',
-      onSale: false,
-      stock: 23,
-      delivery: 'Instant Delivery',
-      gameIcon: 'https://chicks-games.s3.amazonaws.com/11a1698b-9135-4a14-8d11-08525bb0aa75'
-    },
-    // Fill the rest with Blue PartyHat items to maintain 15 total items
-    ...Array(12).fill().map((_, i) => ({
-      id: i + 3,
-      title: 'Blue PartyHat',
-      price: 450.00,
-      originalPrice: 500.00,
-      image: 'https://chicks-products.s3.amazonaws.com/2de94590-b836-4d2a-9d15-575c35f38892',
-      onSale: true,
-      stock: 156,
-      delivery: 'Instant Delivery'
-    }))
-  ];
+  const items = generateVariations(baseItems, 15);
 
   return (
     <>
