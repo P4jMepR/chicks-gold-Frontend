@@ -319,3 +319,9 @@
     padding: 0 1rem;
   }
 } 
+
+/* Add these styles for the filter icons */
+.filter-icon-wrapper img,
+.sort-btn .control-icon {
+  filter: none;
+}
