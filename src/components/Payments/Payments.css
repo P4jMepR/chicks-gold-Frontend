@@ -12,6 +12,12 @@
   flex-wrap: wrap;
 }
 
+.regular-payments, .crypto-payments {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .payment-logo {
   height: 20px;
   object-fit: contain;
@@ -21,38 +27,43 @@
   height: 16px;
   width: 16px;
   object-fit: contain;
-  margin-left: -18px;
-}
-
-.payment-logo + .crypto-logo {
-  margin-left: 0;
 }
 
 .additional-methods {
-  color: #6C727F;
-  font-size: 14px;
-  margin-left: 0px;
   color: lightgray;
+  font-size: 14px;
   opacity: 0.7;
 }
 
 @media (max-width: 768px) {
   .payments-container {
-    padding: 1rem 0;
+    padding: 1rem;
   }
 
   .payment-methods {
-    padding: 0 1rem;
-    gap: 12px;
-    justify-content: flex-start;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    overflow-x: visible;
+    width: 100%;
   }
 
-  .payment-methods::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+  .regular-payments, .crypto-payments {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 4px;
+  }
+
+  .regular-payments::-webkit-scrollbar,
+  .crypto-payments::-webkit-scrollbar {
+    display: none;
   }
 
   .payment-logo {
@@ -63,12 +74,12 @@
   .crypto-logo {
     height: 14px;
     width: 14px;
-    margin-left: -12px;
+    flex-shrink: 0;
   }
 
   .additional-methods {
     font-size: 0.75rem;
     white-space: nowrap;
-    padding-left: 0.5rem;
+    text-align: center;
   }
 } 

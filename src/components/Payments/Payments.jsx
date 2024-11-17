@@ -2,7 +2,7 @@ import React from 'react';
 import './Payments.css';
 
 const Payments = () => {
-  const paymentMethods = [
+  const regularPayments = [
     {
       name: 'Visa',
       logo: 'https://chicksgold.com/payment-methods/visa.svg'
@@ -18,7 +18,10 @@ const Payments = () => {
     {
       name: 'Skrill',
       logo: 'https://chicksgold.com/payment-methods/skrill.svg'
-    },
+    }
+  ];
+
+  const cryptoPayments = [
     {
       name: 'Bitcoin Cash',
       logo: 'https://chicks-currencies.s3.amazonaws.com/1c08ddf1-b0d1-4476-930b-676f621b036c'
@@ -40,14 +43,26 @@ const Payments = () => {
   return (
     <div className="payments-container">
       <div className="payment-methods">
-        {paymentMethods.map((method, index) => (
-          <img 
-            key={index}
-            src={method.logo}
-            alt={`${method.name} payment method`}
-            className={index > 3 ? 'crypto-logo' : 'payment-logo'}
-          />
-        ))}
+        <div className="regular-payments">
+          {regularPayments.map((method, index) => (
+            <img 
+              key={index}
+              src={method.logo}
+              alt={`${method.name} payment method`}
+              className="payment-logo"
+            />
+          ))}
+        </div>
+        <div className="crypto-payments">
+          {cryptoPayments.map((method, index) => (
+            <img 
+              key={index}
+              src={method.logo}
+              alt={`${method.name} payment method`}
+              className="crypto-logo"
+            />
+          ))}
+        </div>
         <span className="additional-methods">and 50+ more</span>
       </div>
     </div>
