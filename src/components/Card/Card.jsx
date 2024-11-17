@@ -6,7 +6,8 @@ const Card = ({
   price, 
   originalPrice, 
   image, 
-  onSale 
+  onSale,
+  gameIcon
 }) => {
   const [quantity, setQuantity] = useState(1);
 
@@ -48,7 +49,7 @@ const Card = ({
         <p className="description">Lorem ipsum dolor sit amet consectetur adipiscing elitr.</p>
 
         <img 
-          src="https://chicks-games.s3.amazonaws.com/5695707f-378c-4b23-b85e-3216ccf3af06" 
+          src={gameIcon || "https://chicks-games.s3.amazonaws.com/5695707f-378c-4b23-b85e-3216ccf3af06"}
           alt="Game indicator" 
           className="game-indicator"
         />

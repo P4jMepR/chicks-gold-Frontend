@@ -4,16 +4,51 @@ import Pagination from '../Pagination/Pagination';
 import './MarketGrid.css';
 
 const MarketGrid = () => {
-  const items = Array(15).fill().map((_, i) => ({
-    id: i,
-    title: 'Blue PartyHat',
-    price: 450.00,
-    originalPrice: 500.00,
-    image: 'https://chicks-products.s3.amazonaws.com/2de94590-b836-4d2a-9d15-575c35f38892',
-    onSale: true,
-    stock: 156,
-    delivery: 'Instant Delivery'
-  }));
+  const items = [
+    {
+      id: 0,
+      title: 'Blue PartyHat',
+      price: 450.00,
+      originalPrice: 500.00,
+      image: 'https://chicks-products.s3.amazonaws.com/2de94590-b836-4d2a-9d15-575c35f38892',
+      onSale: true,
+      stock: 156,
+      delivery: 'Instant Delivery'
+    },
+    {
+      id: 1,
+      title: 'Mythical Shield',
+      price: 299.99,
+      originalPrice: 399.99,
+      image: './fort_shield.webp',
+      onSale: true,
+      stock: 42,
+      delivery: 'Instant Delivery',
+      gameIcon: 'https://chicks-games.s3.amazonaws.com/11a1698b-9135-4a14-8d11-08525bb0aa75'
+    },
+    {
+      id: 2,
+      title: 'Mythical Shield',
+      price: 325.00,
+      originalPrice: null,
+      image: './fort_shield.webp',
+      onSale: false,
+      stock: 23,
+      delivery: 'Instant Delivery',
+      gameIcon: 'https://chicks-games.s3.amazonaws.com/11a1698b-9135-4a14-8d11-08525bb0aa75'
+    },
+    // Fill the rest with Blue PartyHat items to maintain 15 total items
+    ...Array(12).fill().map((_, i) => ({
+      id: i + 3,
+      title: 'Blue PartyHat',
+      price: 450.00,
+      originalPrice: 500.00,
+      image: 'https://chicks-products.s3.amazonaws.com/2de94590-b836-4d2a-9d15-575c35f38892',
+      onSale: true,
+      stock: 156,
+      delivery: 'Instant Delivery'
+    }))
+  ];
 
   return (
     <>
