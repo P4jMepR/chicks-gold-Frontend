@@ -3,10 +3,10 @@ import './Payments.css';
 
 const PAYMENT_METHODS = {
   regular: [
-    { name: 'Visa', logo: 'https://chicksgold.com/payment-methods/visa.svg' },
-    { name: 'Mastercard', logo: 'https://chicksgold.com/payment-methods/mastercard.svg' },
-    { name: 'American Express', logo: 'https://chicksgold.com/payment-methods/amex.svg' },
-    { name: 'Skrill', logo: 'https://chicksgold.com/payment-methods/skrill.svg' }
+    { name: 'Visa', logo: './payment-methods/visa.svg' },
+    { name: 'Mastercard', logo: './payment-methods/mastercard.svg' },
+    { name: 'American Express', logo: './payment-methods/amex.svg' },
+    { name: 'Skrill', logo: './payment-methods/skrill.svg' }
   ],
   crypto: [
     { name: 'Bitcoin Cash', logo: 'https://chicks-currencies.s3.amazonaws.com/1c08ddf1-b0d1-4476-930b-676f621b036c' },

@@ -36,7 +36,7 @@ const Header = () => {
         </button>
 
         <div className="logo">
-          <img src="https://chicksgold.com/logo/chicks-logo-large.svg" alt="Chicks Gold" />
+          <img src="./chicks-logo-large.svg" alt="Chicks Gold" />
         </div>
         
         <div className="separator"></div>
@@ -45,7 +45,7 @@ const Header = () => {
           {navItems.map((item) => (
             <button className="nav-button" key={item}>
               {item}
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+              <img src="./icons/arrow-down.svg" alt="" className="arrow-icon" />
             </button>
           ))}
         </nav>
@@ -53,10 +53,10 @@ const Header = () => {
         <div className="header-actions">
           <button className="nav-button currency-button">
             USD
-            <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+            <img src="./icons/arrow-down.svg" alt="" className="arrow-icon" />
           </button>
           <button className="cart-button">
-            <img src="https://chicksgold.com/icons/cart.svg" alt="" className="cart-icon" />
+            <img src="./icons/cart.svg" alt="" className="cart-icon" />
             <span className="cart-text">CART (5)</span>
           </button>
           <button className="sign-in-button desktop-only">
@@ -70,10 +70,10 @@ const Header = () => {
         <div className="mobile-nav-top">
           <button className="mobile-nav-button currency">
             USD
-            <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+            <img src="./icons/arrow-down.svg" alt="" className="arrow-icon" />
           </button>
           <button className="mobile-nav-button cart">
-            <img src="https://chicksgold.com/icons/cart.svg" alt="" className="cart-icon" />
+            <img src="./icons/cart.svg" alt="" className="cart-icon" />
             CART (5)
           </button>
         </div>
@@ -83,7 +83,7 @@ const Header = () => {
             <div className="mobile-nav-item" key={item}>
               <button className="mobile-nav-button">
                 {item}
-                <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+                <img src="./icons/arrow-down.svg" alt="" className="arrow-icon" />
               </button>
             </div>
           ))}

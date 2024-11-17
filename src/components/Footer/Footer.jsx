@@ -3,10 +3,10 @@ import Payments from '../Payments/Payments';
 import './Footer.css';
 
 const SOCIAL_LINKS = [
-  { href: '#facebook', icon: 'https://chicksgold.com/icons/facebook_white.svg', alt: 'Facebook' },
-  { href: '#instagram', icon: 'https://chicksgold.com/icons/instagram_white.svg', alt: 'Instagram' },
-  { href: '#twitter', icon: '/old_twitter.svg', alt: 'Twitter' },
-  { href: '#discord', icon: 'https://chicksgold.com/icons/discord_white.svg', alt: 'Discord' }
+  { href: '#facebook', icon: './social/facebook_white.svg', alt: 'Facebook' },
+  { href: '#instagram', icon: './social/instagram_white.svg', alt: 'Instagram' },
+  { href: '#twitter', icon: './social/old_twitter.svg', alt: 'Twitter' },
+  { href: '#discord', icon: './social/discord_white.svg', alt: 'Discord' }
 ];
 
 const FOOTER_SECTIONS = [
@@ -71,7 +71,7 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-section company">
         <img 
-          src="https://chicksgold.com/logo/chicks-logo-large.svg" 
+          src="./chicks-logo-large.svg" 
           alt="Chicks Gold" 
           className="footer-logo" 
         />
@@ -89,7 +89,7 @@ const Footer = () => (
           {[...Array(5)].map((_, i) => (
             <img 
               key={i}
-              src="https://chicksgold.com/home/star_full.svg" 
+              src="./social/star_full.svg" 
               alt="Full Star" 
               className="star-rating" 
             />
