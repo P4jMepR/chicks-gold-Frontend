@@ -21,7 +21,7 @@ const MarketGrid = () => {
         <h1>Condimentum consectetur</h1>
         <div className="filters-controls">
           <div className="select-game">
-            <img src="https://chicksgold.com/icons/game-default.svg" alt="" className="control-icon" />
+            <img src="./sword.webp" alt="" className="control-icon" />
             Select a game
             <img src="https://chicksgold.com/icons/arrow-white.svg" alt="" className="arrow-icon" />
           </div>
