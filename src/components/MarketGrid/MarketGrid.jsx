@@ -39,7 +39,7 @@ const generateVariations = (baseItems, count) => {
       // Random variations
       const hasPrice = Math.random() > 0.2; // 80% chance to have a price
       const isOnSale = hasPrice && Math.random() > 0.5; // 50% chance to be on sale if has price
-      const priceVariation = 0.9 + Math.random() * 0.2; // Price varies by ±10%
+      const priceVariation = 0.9 + Math.random() * 0.2; // Price varies by +/- 10%
 
       const basePrice = baseItem.basePrice * priceVariation;
       const saleDiscount = 0.1 + Math.random() * 0.2; // 10-30% discount

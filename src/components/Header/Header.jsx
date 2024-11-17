@@ -1,8 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Add effect to handle body scroll
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,6 +27,16 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
+        <button 
+          className={`burger-menu ${isMenuOpen ? 'open' : ''}`}
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+        </button>
+
         <div className="logo">
           <img src="https://chicksgold.com/logo/chicks-logo-large.svg" alt="Chicks Gold" />
         </div>
@@ -29,47 +53,46 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <button className="nav-button">
+          <button className="nav-button currency-button">
             USD
             <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
           </button>
           <button className="cart-button">
             <img src="https://chicksgold.com/icons/cart.svg" alt="" className="cart-icon" />
-            CART (5)
+            <span className="cart-text">CART (5)</span>
           </button>
           <button className="sign-in-button desktop-only">
             SIGN IN
             <img src="https://chicksgold.com/sign-in/profile.png" alt="" className="profile-icon" />
-          </button>
-          <button 
-            className={`burger-menu ${isMenuOpen ? 'open' : ''}`}
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            <span className="burger-line"></span>
-            <span className="burger-line"></span>
-            <span className="burger-line"></span>
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
       <nav className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
-        {navItems.map((item) => (
-          <div className="mobile-nav-item" key={item}>
-            <button className="mobile-nav-button">
-              {item}
-              <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
-            </button>
-          </div>
-        ))}
-        <div className="mobile-nav-item">
-          <button className="mobile-nav-button">
+        <div className="mobile-nav-top">
+          <button className="mobile-nav-button currency">
             USD
             <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
           </button>
+          <button className="mobile-nav-button cart">
+            <img src="https://chicksgold.com/icons/cart.svg" alt="" className="cart-icon" />
+            CART (5)
+          </button>
         </div>
-        <div className="mobile-nav-item">
+        
+        <div className="mobile-nav-main">
+          {navItems.map((item) => (
+            <div className="mobile-nav-item" key={item}>
+              <button className="mobile-nav-button">
+                {item}
+                <img src="https://chicksgold.com/icons/arrow-down.svg" alt="" className="arrow-icon" />
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <div className="mobile-nav-bottom">
           <button className="mobile-nav-button sign-in">
             SIGN IN
             <img src="https://chicksgold.com/sign-in/profile.png" alt="" className="profile-icon" />
