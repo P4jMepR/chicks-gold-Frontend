@@ -501,4 +501,27 @@ body:has(.mobile-nav.open) {
   position: fixed;
   width: 100%;
   height: 100%;
+}
+
+/* Update the root level styles */
+html, body {
+  overscroll-behavior-x: none; /* Only prevent horizontal overscroll */
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .mobile-nav {
+    /* Remove overscroll-behavior: contain to allow vertical bouncing */
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+
+  .mobile-nav-main {
+    /* Remove overscroll-behavior: contain to allow vertical bouncing */
+    -webkit-overflow-scrolling: touch;
+  }
 } 
