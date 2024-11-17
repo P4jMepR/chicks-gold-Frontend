@@ -13,8 +13,6 @@
   background-color: var(--background-dark);
   border-radius: 5px;
   padding: 2rem;
-  border: 1px solid #7d7e89;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 .market-header {
@@ -35,7 +33,7 @@
 .search-bar input,
 .filter-btn {
   background-color: rgba(77, 91, 126, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: none;
   padding: 0.5rem 1rem;
   color: var(--text-light);
   display: flex;
@@ -44,45 +42,54 @@
   height: 42px;
   box-sizing: border-box;
   min-width: 300px;
+  border-radius: 4px;
 }
 .sort-btn {
-  background-color: rgba(58, 68, 93, 0.5);
-  border: 0px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(77, 91, 126, 0.4);
+  border: none;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   position: relative;
   height: 42px;
+  padding: 0 1rem;
 }
 .search-bar {
   flex: 0.95;
   height: 42px;
   position: relative;
   margin-left: 1rem;
+  margin-right: 0;
 }
 
 .filter-dropdown {
   background-color: rgba(77, 91, 126, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: none;
   padding: 0 1rem;
   min-width: 160px;
   display: flex;
   gap: 0.75rem;
   position: relative;
-  border-radius: 0;
-  border-right: none;
-  margin-right: 0;
+  border-radius: 4px;
+}
+
+.filter-dropdown:first-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .filter-dropdown:last-child {
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .search-bar input {
   width: 100%;
   outline: none;
   padding: 0 1rem 0 2.5rem;
-  border-radius: 0;
-  border-right: none;
+  border-radius: 4px;
+  background-color: rgba(77, 91, 126, 0.4);
 }
 
 .search-icon {
