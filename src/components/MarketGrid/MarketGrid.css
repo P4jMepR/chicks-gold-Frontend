@@ -13,6 +13,7 @@
   background-color: var(--background-dark);
   border-radius: 5px;
   padding: 2rem;
+  border: 1px solid #7d7e89;
 }
 
 .market-header {
