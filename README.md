@@ -87,8 +87,10 @@ Special attention was given to maintaining consistent card proportions and intui
 
 ## Submission Guidelines
 
-- **Code Repository:** The project is hosted on a public GitHub repository with organized and well-documented code.
+- **Code Repository:** The project is hosted on a public GitHub repository [here](https://github.com/P4jMepR/chicks-gold-Frontend). 
 - **Live Demo:** Access the live version of the application [here](https://chicks-gold-frontend.vercel.app/).
+- **Hosting:** The application is hosted using [Vercel](https://vercel.com/), ensuring reliable and efficient deployment.
+- **CI/CD:** Continuous Integration and Deployment are managed via [GitHub Actions](https://github.com/features/actions), automating the build and deployment processes.
 - **Documentation:** This README provides comprehensive instructions on setting up and running the application, along with insights into design choices.
 
 ## Evaluation Criteria
