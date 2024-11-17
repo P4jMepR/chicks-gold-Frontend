@@ -61,7 +61,7 @@ const Header = () => {
           </button>
           <button className="sign-in-button desktop-only">
             SIGN IN
-            <img src="https://chicksgold.com/sign-in/profile.png" alt="" className="profile-icon" />
+            <img src="./social/profile.webp" alt="" className="profile-icon" />
           </button>
         </div>
       </div>
