@@ -23,12 +23,12 @@
 }
 
 .payment-logo {
-  height: 20px;
+  height: 24px;
 }
 
 .crypto-logo {
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
 }
 
 .additional-methods {
@@ -64,12 +64,12 @@
   }
 
   .payment-logo {
-    height: 16px;
+    height: 20px;
   }
 
   .crypto-logo {
-    height: 14px;
-    width: 14px;
+    height: 20px;
+    width: 20px;
   }
 
   .payment-logo, .crypto-logo {

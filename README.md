@@ -1,6 +1,7 @@
 # Chicks Gold Marketplace
 
-Welcome to the **Chicks Gold Marketplace**, a responsive front-end application designed to showcase a mock online marketplace for in-game items. This project demonstrates a clean and consistent user interface built with ReactJS and styled using pure CSS, ensuring adaptability across various device sizes.
+Welcome to the **Chicks Gold Marketplace**, a responsive front-end application designed to showcase a mock online marketplace for in-game items. 
+This project demonstrates a clean and consistent user interface built with ReactJS and styled using pure CSS, ensuring adaptability across various device types.
 
 ## Table of Contents
 
@@ -18,7 +19,8 @@ Welcome to the **Chicks Gold Marketplace**, a responsive front-end application d
 
 ## Overview
 
-The Chicks Gold Marketplace is a mock platform designed to mimic an online store for game-related items. It showcases product listings, responsive navigation, and interactive components such as shopping carts and pagination—all built without the use of external styling frameworks to highlight proficiency in fundamental web technologies.
+The Chicks Gold Marketplace is a mock platform designed to mimic a provided design of an online store for game-related items and services. 
+It showcases product listings, responsive navigation and interactive components such as shopping carts and pagination—all built without the use of external styling frameworks.
 
 ## Features
 
@@ -76,8 +78,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
 ## Responsive Design
