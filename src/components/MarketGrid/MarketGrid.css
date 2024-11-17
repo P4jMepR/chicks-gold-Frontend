@@ -43,6 +43,7 @@
   gap: 0.5rem;
   height: 42px;
   box-sizing: border-box;
+  min-width: 300px;
 }
 .sort-btn {
   background-color: rgba(58, 68, 93, 0.5);
@@ -53,7 +54,7 @@
   height: 42px;
 }
 .search-bar {
-  flex: 1;
+  flex: 0.95;
   height: 42px;
   position: relative;
   margin-left: 1rem;
